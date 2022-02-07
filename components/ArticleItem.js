@@ -6,7 +6,7 @@ const ArticleItem = ({ article }) => {
     <Link href='/article/[id]' as={`/article/${article.id}`}>
       <a className={articleStyles.card}>
         <h1>{article.title}</h1>
-        <p>{article.body}</p>
+        <p>{article.excerpt}</p>
       </a>
     </Link>
   );
